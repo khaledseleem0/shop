@@ -1,13 +1,13 @@
 [
     {
        "banners":[
-        {"src":"./images/banner1.jpg","info":"hieght Qulity"},
-        {"src":"./images/banner2.jpg","info":"banding info"},
-        {"src":"./images/banner3.jpg","info":"speed custamize"},
-        {"src":"./images/banner4.jpg","info":"free gift"},
-        {"src":"./images/banner5.jpg","info":"fashions life"},
-        {"src":"./images/banner6.jpg","info":"lifestyle things"},
-        {"src":"./images/banner7.jpg","info":"do more now "}
+        {"src":"/images/banners/banner1.jpg","info":"hieght Qulity"},
+        {"src":"./images/banners/banner2.jpg","info":"banding info"},
+        {"src":"./images/banners/banner3.jpg","info":"speed custamize"},
+        {"src":"./images/banners/banner4.jpg","info":"free gift"},
+        {"src":"./images/banners/banner5.jpg","info":"fashions life"},
+        {"src":"./images/banners/banner6.jpg","info":"lifestyle things"},
+        {"src":"./images/banners/banner7.jpg","info":"do more now "}
 
         ],
          "cards":[
@@ -170,7 +170,7 @@
             "id":"12",
             "rate":"4",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"30"
         },
         {
             "src":"./images/product/product12.jpg",
@@ -178,14 +178,14 @@
             "id":"13",
             "rate":"3",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"20"
         },            {
             "src":"./images/product/product13.jpg",
             "name" :"prodcut",
             "id":"14",
             "rate":"2",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"560"
         },
         {
             "src":"./images/product/product14.jpg",
@@ -193,7 +193,7 @@
             "id":"15",
             "rate":"5",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"20"
         },
         {
             "src":"./images/product/product15.jpg",
@@ -201,7 +201,7 @@
             "id":"16",
             "rate":"4",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"10"
         },
         {
             "src":"./images/product/product16.jpg",
@@ -209,7 +209,7 @@
             "id":"17",
             "rate":"1",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"20"
         },     
         {
             "src":"./images/product/product17.jpg",
@@ -217,7 +217,7 @@
             "id":"18",
             "rate":"2",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"5.50"
         },
         {
             "src":"./images/product/product18.jpg",
@@ -225,7 +225,7 @@
             "id":"19",
             "rate":"4",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"3.50"
         },
         {
             "src":"./images/product/product19.jpg",
@@ -233,7 +233,7 @@
             "id":"20",
             "rate":"3",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"250"
         },           
          {
             "src":"./images/product/product20.jpg",
@@ -241,7 +241,7 @@
             "id":"21",
             "rate":"2",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"50"
+            "price":"8"
         }
     ]
         

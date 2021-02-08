@@ -9,14 +9,14 @@ export default function  Footer() {
             <>
                 <FooterContainer>
                     <Shopping> shopping.com 
-                    <i class="fas fa-tags"></i>
+                    <i className="fas fa-tags"></i>
                     </Shopping>
                 <ul>
-                    {links.map((link)=> <li> <Link to="/:page"> {link} </Link></li> )}
+                    {links.map((link,i)=> <li key={i}> <Link to="/:page"> {link} </Link></li> )}
                 </ul>
                 </FooterContainer>
                 <CopyWrite>
-                    designed by <i class="fas fa-heart"></i>  {"khaled Seleem"} 
+                    designed by <i className="fas fa-heart"></i>  {"khaled Seleem"} 
                 </CopyWrite>
         </>
    )

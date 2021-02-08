@@ -10,15 +10,12 @@ import {Img,ImgContainer} from './../feature/featureStyle';
     return (
             <CardContainer key={index}>
                 <ImgContainer>
-                <Img src={product.src} alt="" />
+                <Img src={`${process.env.PUBLIC_URL}/assets/`+product.src} alt={product.name} />
                 </ImgContainer>
                 <ProductText> name : {product.name}</ProductText>
                 <ProductText> price : {product.price}$</ProductText>
                 <ProductText> amount:{item.amount}</ProductText>
-                
-             <Btn className="btn btn-danger" onClick={()=>{
-                 props.removefromcart(index)
-                }}>
+             <Btn className="btn btn-danger" onClick={()=>props.removefromcart(index)}>
             <i className="fa fa-trash"></i> Remove
                </Btn>
             </CardContainer>
@@ -26,9 +23,7 @@ import {Img,ImgContainer} from './../feature/featureStyle';
 }
 function dispatchToProps(dispatch){
     return {
-        removefromcart: (index) => dispatch(removefromcart(index)),
-        reset:()=>dispatch(reset())
-        
+        removefromcart: (index) => dispatch(removefromcart(index))        
   }
   }
 export default connect(null , dispatchToProps)(Card)

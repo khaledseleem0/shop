@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React from "react";
 import {Pop} from "./../feature/featureStyle";
 import {Form,Input,Send,Label,Login} from './signupStyle';
 import  "./../../style.css";

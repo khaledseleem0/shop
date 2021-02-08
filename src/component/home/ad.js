@@ -2,9 +2,9 @@ import React from "react";
 import { Container ,Content,Sponsers} from "./adStyle";
 export default function  Ad() {
     const sponser = [
-        "./../../images/sponsers/cocacola.png",
-        "./../../images/sponsers/amazon.png",
-        "./../../images/sponsers/square.png",
+        "./images/sponsers/cocacola.png",
+        "./images/sponsers/amazon.png",
+        "./images/sponsers/kfc.png",
     ]
         return(
             <>
@@ -17,7 +17,7 @@ export default function  Ad() {
         <div className="container-section">
                 <Sponsers>
                 {sponser.map((src,i)=>{
-                  return <img src={src} key={i} />
+                  return <img src={`${process.env.PUBLIC_URL}/assets/${src}`} key={i} />
                 })}
                 </Sponsers>
         </div>

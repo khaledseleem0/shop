@@ -26,7 +26,6 @@ background:${props => props.theme == "login" ? "#a3fff21f" :"#ffa3a31f "};
      margin: 10px;
      transition:all .3s ease-in-out;
      content: "";
-     ${(props)=>console.log(props)}
      background: ${props => props.theme == "login" ? "#00af91" :"#ec5b5b"};
      height: 2px;
      width: 100%;

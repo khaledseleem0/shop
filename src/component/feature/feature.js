@@ -1,26 +1,26 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { Img, Clear, Pop, Card, ImgContainer, ProductName, Price, CardContainer, Navigation } from './featureStyle';
-import axios from 'axios';
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addtocart } from './../../store/actions';
+import data from "./../../data.json";
 class Feature extends Component {
   state = {
     card: [],
     product: [],
-    amount: 0,
   }
+
   componentDidMount() {
-    axios.get("./../../data.json").then((respond) => {
-      this.setState({
-        card: respond.data[0].cards
-      })
+    const getall = () => {
+      return Promise.resolve(data)
+    };
+    getall().then((respond) => {
+      this.setState({ card: respond[0].cards })
     })
   }
 
   render() {
-    let amount = 0;
     var settings = {
       dots: true,
       infinite: true,
@@ -31,31 +31,17 @@ class Feature extends Component {
       pauseOnHover: true
     };
     const lg = window.innerWidth;
-
-    switch (true) {
-      case lg >= 700:
-        settings.slidesToShow = 3;
-        break;
-      case 700 > lg > 300:
-        settings.slidesToShow = 2;
-        break;
-      case lg <= 400:
-        settings.slidesToShow = 1;
-
-        break;
-      default: settings.slidesToShow = 2;
-        break;
-    }
+    {lg >= 700 ? settings.slidesToShow = 3:700 > lg && lg > 400 ?settings.slidesToShow = 2 :lg <= 400 ? settings.slidesToShow = 1 : settings.slidesToShow = 3  }
     const cardState = this.state.card;
-    const cardRender = cardState.map((card) => {
+    const cardRender = cardState.map((card, i) => {
       return (
-        <CardContainer>
+        <CardContainer key={i}>
           <Card>
             <ImgContainer>
-              <Img src={card.src} alt="" />
+              <Img src={`${process.env.PUBLIC_URL}/assets/` + card.src} alt="" />
               <Navigation>
                 <Link to={"product/" + card.id}>
-                  <i class="fas fa-question"></i>
+                  <i className="fas fa-question"></i>
                 </Link>
               </Navigation>
             </ImgContainer>
@@ -63,7 +49,6 @@ class Feature extends Component {
             <Price>{card.price}$ </Price>
             <Clear></Clear>
           </Card>
-
         </CardContainer>
       )
 
