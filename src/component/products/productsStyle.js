@@ -3,11 +3,12 @@ import {Btn} from "./../cart/cardStyle";
 export const GraidContainer = styled.div`
                 display:grid;
                 grid-template-columns: auto auto auto;
-                @media screen and (max-width:700px){
+                margin-top: 5%;
+                @media screen and (max-width:800px){
                 grid-template-columns:  auto auto;
                 }
                 
-                @media screen and(max-width:400px){
+                @media screen and (max-width:450px){
                     grid-template-columns: auto ;
                 }
 ` 

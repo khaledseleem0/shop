@@ -14,6 +14,9 @@ flex-flow: column;
 box-shadow:${props => props.theme == "login" ? 
 "rgba(0,0,0,0.1) 0px 4px 15px 0px,rgba(0,0,0,0.1) 0px 1px 2px 0px,rgba(44, 219, 237, 0.5) 0px 2px 0px 0px inset":
 "rgba(0, 0, 0, 0.1) 0px 4px 15px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(237, 44, 73, 0.5) 0px 2px 0px 0px inset"};
+@media screen and (max-width:700px){
+        width: 100%;
+} 
 ` 
 export const Input = styled.input`
 display:block;

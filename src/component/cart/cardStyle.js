@@ -1,9 +1,17 @@
 import styled from "styled-components"
 export const CardContainer  = styled.div`
 background:#fff;
-width:30vw;
+width:28vw;
 padding:2%;
 box-shadow :0 10px 40px -10px #c5def982;
+margin-top:5%;
+@media screen and (max-width:700px){
+    width:40vw;
+}
+    
+    @media screen and (max-width:450px){
+        width:90vw;
+    }
 
 `
 export const ProductText  = styled.div`

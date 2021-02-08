@@ -26,7 +26,7 @@ function Nav(props){
             <Header>
                 {/* logo  */}
                    <Logo>
-                   <NavLink to="/" exact> 
+                   <NavLink to="/shop" exact> 
                    <img src={LogoIcon} alt="shop"/>
                    </NavLink>
                    </Logo>
@@ -40,7 +40,7 @@ function Nav(props){
                        <Ul>
                            <Li>
                            <IconNav className="fas fa-store-alt"></IconNav>
-                             <NavLink to="/" exact>home</NavLink>
+                             <NavLink to="/shop" exact>home</NavLink>
                            </Li>
                            <Li>
                                   <IconNav className="fas fa-gifts"></IconNav>

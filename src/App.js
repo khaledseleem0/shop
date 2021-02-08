@@ -21,7 +21,7 @@ render(){
                     {/* start CODE */}
           <Nav amount={this.props.amount}/>
           <Switch>
-          <Route path="/" component={Home} exact></Route>
+          <Route path="/shop" component={Home} exact></Route>
           <Route path="/product/:id" component={Product}></Route>
           <Route path="/cart" component={Cart}></Route>
           <Route path="/products" component={Products}></Route>

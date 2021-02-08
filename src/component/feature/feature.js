@@ -27,11 +27,11 @@ class Feature extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 4000,
       pauseOnHover: true
     };
     const lg = window.innerWidth;
-    {lg >= 700 ? settings.slidesToShow = 3:700 > lg && lg > 400 ?settings.slidesToShow = 2 :lg <= 400 ? settings.slidesToShow = 1 : settings.slidesToShow = 3  }
+    {lg >= 800 ? settings.slidesToShow = 3: 800 > lg && lg > 500 ?settings.slidesToShow = 2 :lg <= 500 ? settings.slidesToShow = 1 : settings.slidesToShow = 3  }
     const cardState = this.state.card;
     const cardRender = cardState.map((card, i) => {
       return (

@@ -73,22 +73,13 @@ a,span{
     display:inline-block;
     transition:0.4s;
     &:hover{
-         transform: translate(0%,0%);
          background: #fd094d;
          color: #fff;
          cursor: pointer;
     }
 
 }
-& > a{
-    float:right;
-    transform:translate(-70%,70%);
 
-}
-& > span{
-    float:left;
-    transform:translate(70%,70%)
-}
 `
 export const Img = styled.img`
 width:100%;
