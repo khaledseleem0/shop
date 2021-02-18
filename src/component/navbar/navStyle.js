@@ -2,10 +2,10 @@ import styled from 'styled-components';
 const maxWidth = 700;
 export  const  Header = styled.div`
         padding:1% 5% ;
-         display: flex;
+        display: flex;
         background: #fff;
         box-shadow:0 19px 38px rgba(0,0,0,0.023),0 15px 12px rgba(0,0,0,0.03322);
-    position:relative;
+        position:relative;
 `
 export const Navbar =styled.div`
         flex:1;
@@ -35,7 +35,7 @@ export const Ul = styled.ul`
             height:100vh;
             justify-content: space-around;
             width:100vw;
-            background:#dfdfdfc9;
+            background:#fff;
             align-items: center;
             transition:5s;
         }
@@ -48,20 +48,20 @@ export const Ul = styled.ul`
 
  &:after{
     content: "";
-    background: #fd5e53;
+    background: #FFBF00;
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     border-radius: 20px;
-    transform:scale(0);
+    transform:scale(1.3);
     transition:0.4s;
     z-index:-1;
+    clip-path:circle(0%);
 
  } &:hover:after{
-    transform:scale(1.5);
-
+    clip-path:circle(100%);
  }     
  & > a{
             text-decoration:none;
@@ -96,4 +96,12 @@ z-index:3;
 ` 
 export const IconNav = styled.i`
 margin:5px;
+`
+export const Amount = styled.span`
+padding: 5px;
+background: #FFBF00;
+border-radius: 7px;
+position: absolute;
+line-height: 9px;
+color: #fff;
 `

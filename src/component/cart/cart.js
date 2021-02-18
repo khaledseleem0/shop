@@ -20,7 +20,6 @@ class Cart extends Component {
       });
     })
   };
-
   sendOrder = () => {
     this.props.reset();
     alert("thanks, you will located to pay page in couple of secodes")
@@ -42,12 +41,12 @@ class Cart extends Component {
 }
 
 function mapStateToProps(state) {
-  return {
-    item: state.cart,
-    total: state.cart.reduce(
-      (total, item) => parseInt(total) + parseInt(item.amount) * parseInt(item.product.price), 0
-    )
-  };
+    return {
+      item: state.cart,
+      total: state.cart.reduce(
+        (total, item) => parseInt(total) + parseInt(item.amount) * parseInt(item.product.price), 0
+      )
+    }
 }
 function mapDispatchToProps(dispatch) {
   return {

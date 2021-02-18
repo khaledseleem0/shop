@@ -12,11 +12,14 @@ class Feature extends Component {
   }
 
   componentDidMount() {
-    const getall = () => {
-      return Promise.resolve(data)
+    const getHeightRate = () => {
+    let  productrate =  data[0].products.filter((product) => {
+        return product.rate === "5"
+      })
+      return Promise.resolve(productrate)
     };
-    getall().then((respond) => {
-      this.setState({ card: respond[0].cards })
+    getHeightRate().then((respond) => {
+      this.setState({ card: respond})
     })
   }
 
@@ -35,13 +38,13 @@ class Feature extends Component {
     const cardState = this.state.card;
     const cardRender = cardState.map((card, i) => {
       return (
-        <CardContainer key={i}>
-          <Card>
+        <CardContainer>
+          <Card  key={i}>
             <ImgContainer>
               <Img src={`${process.env.PUBLIC_URL}/assets/` + card.src} alt="" />
               <Navigation>
                 <Link to={"product/" + card.id}>
-                  <i className="fas fa-question"></i>
+                <i class="fas fa-info-circle"></i>
                 </Link>
               </Navigation>
             </ImgContainer>
@@ -58,7 +61,7 @@ class Feature extends Component {
       <div className="container-section">
         <Pop>
           <h3>features products </h3>
-          <span feature></span>
+          <span feature="true"></span>
         </Pop>
         <Slider {...settings}>
           {cardRender}

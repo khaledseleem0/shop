@@ -5,14 +5,16 @@ export const Pop  = styled.div`
             height:5px;
             width:15px;
             display:inline-block;
-            background:${props => props.children[1].props.feature ? "#f5d782" :props.children[1].props.signup ?  "palevioletred" : "#00af91"  };
+            background:${props => props.children[1].props.feature ? "#ECAF44" :props.children[1].props.signup ?  "palevioletred" : "#00af91"  };
         }
        
 `
 export const Card  = styled.div`
-background:#fff;
-padding:1%;
-margin:1%;
+background: #fff;
+    padding: 1%;
+    margin: 2%;
+    box-shadow: 0px 0px 10px 3px #a9a6a07a;
+    border-radius: 0px 0px 10px 10px;
 `
 export const ImgContainer  = styled.div`
             position:relative;
@@ -22,14 +24,14 @@ export const ImgContainer  = styled.div`
         }
 `
 export const ProductName  = styled.span`
-            background:#f8dc81;
+            background:#ECAF44;
             float:right;
             padding:1% 5% ;
             border-radius:10px;
             margin:2%;
 `
 export const Price  = styled.span`
-background:#f8dc81;
+background:#ECAF44;
 float:left;
 padding:1% 5%;
 border-radius:10px;
@@ -60,7 +62,7 @@ padding: 5%;
 clear: both;
 display: flex;
 align-items: end;
-background:linear-gradient(to top,rgba(248, 220, 129, 0.82),rgba(0,0,0,0));
+background:rgba(0,0,0,0.7);
 justify-content: space-between;
 opacity:0;
 transition:0.5s;

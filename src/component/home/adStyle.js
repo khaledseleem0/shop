@@ -7,6 +7,8 @@ height:50vh;
 background-size:cover;
 background-attachment: fixed;
 position:relative;
+background-position: bottom center;
+
 `
 export const Content = styled.div`
     position:absolute;

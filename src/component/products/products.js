@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import { GraidContainer } from './productsStyle'
-import { Img, Clear, Pop, Card, ImgContainer, ProductName, Price, CardContainer, Navigation } from './../feature/featureStyle';
+import { Img, Clear, Pop, Card, ImgContainer, ProductName, Price, Navigation } from './../feature/featureStyle';
 import data from "./../../data.json";
 class Products extends Component {
   state = {
@@ -28,13 +28,12 @@ class Products extends Component {
     const productsState = this.state.products;
     const productsRender = productsState.map((card, index) => {
       return (
-        <CardContainer key={index}>
-          <Card>
+          <Card  key={index}>
             <ImgContainer>
               <Img src={`${process.env.PUBLIC_URL}/assets/` + card.src} alt="" />
               <Navigation>
                 <Link to={"product/" + card.id}>
-                  <i className="fas fa-question"></i>
+                <i class="fas fa-info-circle"></i>
                 </Link>
               </Navigation>
             </ImgContainer>
@@ -43,7 +42,6 @@ class Products extends Component {
             <Clear></Clear>
           </Card>
 
-        </CardContainer>
       )
 
     })
@@ -51,7 +49,7 @@ class Products extends Component {
       <div className="container-section">
         <Pop>
           <h3> products   </h3>
-          <span feature></span>
+          <span feature="true"></span>
         </Pop>
         <GraidContainer>
           {productsRender}

@@ -11,11 +11,13 @@ export default function Reduser(state,action) {
                 
                 ]
             }
-        }case 'REMOVE_FROM_CART': {
-                let index = action.index;
-                let new_state = {...state};
-                delete new_state.cart[index];
-                return new_state;
+        } case 'REMOVE_FROM_CART': {    
+            let index = action.index;
+            let clone = { ...state };
+            delete clone.cart[index];
+            let clone_Without_Erorrs = clone.cart.filter((result)=>{ return result !== undefined })
+            let final_clone = { cart: clone_Without_Erorrs };
+            return final_clone;
         }
         case 'RESET': {
             let new_state = {...state};

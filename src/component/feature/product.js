@@ -23,9 +23,21 @@ class Product extends Component {
             })
         })
     }
+
     handleValue = (e) => {
-        let value = e.target.value;
-        this.setState({ amount: value })
+        let spanbtn = document.querySelectorAll("i")[5];
+        let value = parseInt(e.target.value);
+        if (isNaN(value) || value <= 0 || value > 3000  ) {
+            this.setState({ amount: 0 });
+            e.target.style.border = "1px solid tomato";
+            spanbtn.classList.add("bad")
+        } else { 
+
+            this.setState({ amount: value })
+            e.target.style.border = "1px solid royalblue";
+            spanbtn.classList.remove("bad")
+
+        }
     }
     render() {
         return (
@@ -37,20 +49,24 @@ class Product extends Component {
                     <Content>
                         <h3>
                             {this.state.product.name}
-                        </h3>
+                       </h3>
                         <p>
                             {this.state.product.info}
                         </p>
                         <p>
                             price :  {this.state.product.price} $
-                </p>
+                        </p>
                         <p>
                             total :  {(parseInt(this.state.amount) * this.state.product.price)}$
-                </p>
+                        </p>
                         <Input type="number" onInput={this.handleValue} />
-                        <Btn onClick={() => {
+                        <Btn onClick={(e) => {
+                          let value = this.state.amount;
+                            if (value === 0) {
+                                return;
+                            }
                             this.props.addtocart(this.state.product, this.state.amount)
-                        }}>
+                        }} >
                             <i className="far fa-plus-square"></i>
                         </Btn>
                     </Content>

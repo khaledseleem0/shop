@@ -1,7 +1,7 @@
 import React from 'react';
 import LogoIcon from './../../images/logo.png';
 import {NavLink ,BrowserRouter} from 'react-router-dom';
-import {Logo,Navbar,Header,Ul,Li,Burger,IconNav} from "./navStyle";
+import {Logo,Navbar,Header,Ul,Li,Burger,IconNav,Amount} from "./navStyle";
 function Nav(props){
     let i = 0;
    const  handelBurger = ()=>{
@@ -49,7 +49,7 @@ function Nav(props){
                            <Li>
                                  <IconNav className="fas fa-shopping-basket"></IconNav>
                                  <NavLink to="/cart" exact>cart</NavLink>
-                                 <span>({props.amount}) </span>
+                                 <Amount>{props.amount} </Amount>
                            </Li>
                            <Li>
                                  <IconNav className="fas fa-sign-in-alt"></IconNav>

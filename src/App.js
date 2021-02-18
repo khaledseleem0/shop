@@ -35,9 +35,7 @@ render(){
 }
 }
 function mapStateToProps(state){
-  return {
-     amount :state.cart.reduce((total,item)=>total + parseInt(item.amount),0)
-  }
+  return {amount :state.cart.reduce((total,item)=>total + parseInt(item.amount),0)}
 }
 
 export default connect(mapStateToProps)(App);

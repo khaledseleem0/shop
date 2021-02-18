@@ -8,7 +8,7 @@ const About = () => {
     <div className="container-section">
       <Pop>
         <h3>about us </h3>
-        <span feature></span>
+        <span feature="true"></span>
       </Pop>
       <Abouts>
       <ImgAbout>

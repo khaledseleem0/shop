@@ -1,8 +1,7 @@
 [
     {
        "banners":[
-        {"src":"/images/banners/banner1.jpg","info":"hieght Qulity"},
-        {"src":"./images/banners/banner2.jpg","info":"banding info"},
+        {"src":"./images/banners/banner2.jpg","info":"good branding"},
         {"src":"./images/banners/banner3.jpg","info":"speed custamize"},
         {"src":"./images/banners/banner4.jpg","info":"free gift"},
         {"src":"./images/banners/banner5.jpg","info":"fashions life"},
@@ -10,68 +9,10 @@
         {"src":"./images/banners/banner7.jpg","info":"do more now "}
 
         ],
-         "cards":[
-             {
-                "src":"./images/product/product.jpg",
-                "name" :"prodcut",
-                "id":"0",
-                "rate":"2",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            },
-            {
-                "src":"./images/product/product0.jpg",
-                "name" :"prodcut1",
-                "id":"1",
-                "rate":"5",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            },
-            {
-                "src":"./images/product/product1.jpg",
-                "name" :"prodcut2",
-                "id":"2",
-                "rate":"4",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            },
-            {
-                "src":"./images/product/product2.jpg",
-                "name" :"prodcut3",
-                "id":"3",
-                "rate":"1",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            },     
-            {
-                "src":"./images/product/product3.jpg",
-                "name" :"prodcut4",
-                "id":"4",
-                "rate":"2",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            },
-            {
-                "src":"./images/product/product4.jpg",
-                "name" :"prodcut5",
-                "id":"5",
-                "rate":"4",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            },
-            {
-                "src":"./images/product/product5.jpg",
-                "name" :"prodcut6",
-                "id":"6",
-                "rate":"3",
-                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-                "price":"50"
-            }
-         ],
          "products":[
             {
                "src":"./images/product/product.jpg",
-               "name" :"prodcut",
+               "name" :"black music",
                "id":"0",
                "rate":"2",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -79,7 +20,7 @@
            },
            {
                "src":"./images/product/product0.jpg",
-               "name" :"prodcut1",
+               "name" :"white watch",
                "id":"1",
                "rate":"5",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -87,7 +28,7 @@
            },
            {
                "src":"./images/product/product1.jpg",
-               "name" :"prodcut2",
+               "name" :"camera",
                "id":"2",
                "rate":"4",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -95,15 +36,15 @@
            },
            {
                "src":"./images/product/product2.jpg",
-               "name" :"prodcut3",
+               "name" :"black pkg",
                "id":"3",
                "rate":"1",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-               "price":"50"
+               "price":"520"
            },     
            {
                "src":"./images/product/product3.jpg",
-               "name" :"prodcut4",
+               "name" :"red chose",
                "id":"4",
                "rate":"2",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -111,7 +52,7 @@
            },
            {
                "src":"./images/product/product4.jpg",
-               "name" :"prodcut5",
+               "name" :"hair pkg",
                "id":"5",
                "rate":"4",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -119,14 +60,14 @@
            },
            {
                "src":"./images/product/product5.jpg",
-               "name" :"prodcut6",
+               "name" :"sun glass",
                "id":"6",
                "rate":"3",
                "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
                "price":"50"
            },            {
             "src":"./images/product/product6.jpg",
-            "name" :"prodcut6",
+            "name" :"bag",
             "id":"7",
             "rate":"2",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -134,7 +75,7 @@
         },
         {
             "src":"./images/product/product7.jpg",
-            "name" :"prodcut1",
+            "name" :"ordinary chose ",
             "id":"8",
             "rate":"5",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -142,7 +83,7 @@
         },
         {
             "src":"./images/product/product8.jpg",
-            "name" :"prodcut2",
+            "name" :"skin pkg",
             "id":"9",
             "rate":"4",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -150,15 +91,15 @@
         },
         {
             "src":"./images/product/product9.jpg",
-            "name" :"prodcut3",
+            "name" :"clothes pkg",
             "id":"10",
-            "rate":"1",
+            "rate":"5",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
             "price":"50"
         },     
         {
             "src":"./images/product/product10.jpg",
-            "name" :"prodcut4",
+            "name" :"music ",
             "id":"11",
             "rate":"2",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
@@ -166,85 +107,28 @@
         },
         {
             "src":"./images/product/product11.jpg",
-            "name" :"prodcut5",
+            "name" :"digital watach",
             "id":"12",
-            "rate":"4",
+            "rate":"5",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"30"
+            "price":"320"
         },
         {
             "src":"./images/product/product12.jpg",
-            "name" :"prodcut6",
+            "name" :" footboal nike ",
             "id":"13",
             "rate":"3",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
             "price":"20"
         },            {
             "src":"./images/product/product13.jpg",
-            "name" :"prodcut",
+            "name" :"camera canone",
             "id":"14",
             "rate":"2",
             "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
             "price":"560"
-        },
-        {
-            "src":"./images/product/product14.jpg",
-            "name" :"prodcut1",
-            "id":"15",
-            "rate":"5",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"20"
-        },
-        {
-            "src":"./images/product/product15.jpg",
-            "name" :"prodcut2",
-            "id":"16",
-            "rate":"4",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"10"
-        },
-        {
-            "src":"./images/product/product16.jpg",
-            "name" :"prodcut3",
-            "id":"17",
-            "rate":"1",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"20"
-        },     
-        {
-            "src":"./images/product/product17.jpg",
-            "name" :"prodcut4",
-            "id":"18",
-            "rate":"2",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"5.50"
-        },
-        {
-            "src":"./images/product/product18.jpg",
-            "name" :"prodcut5",
-            "id":"19",
-            "rate":"4",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"3.50"
-        },
-        {
-            "src":"./images/product/product19.jpg",
-            "name" :"prodcut6",
-            "id":"20",
-            "rate":"3",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"250"
-        },           
-         {
-            "src":"./images/product/product20.jpg",
-            "name" :"prodcut",
-            "id":"21",
-            "rate":"2",
-            "info":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur non  id repellendus officiis minus sit ipsa dignissimos, voluptatem errincidunt eaque fugit eos, recusandae a vel ducimus ipsam, deleniti iure","starts":"5",
-            "price":"8"
         }
     ]
         
     }
 ]
-
