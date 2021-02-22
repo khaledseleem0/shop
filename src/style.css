@@ -8,16 +8,19 @@
 outline: none !important;
 user-select: none !important;
 }
+#root{
+  width:100vw;
+}
 body{
   overflow-x: hidden;
   position: relative;
   font-family:sans-serif cursive;
-  background: #d3e0dc5e;
+  background: #fdfdfd;
   scrollbar-color:  transparent;
 }
 body::-webkit-scrollbar-track {
   background-color: #F5F5F5;
-  background-color: #373833;
+  background-color: #777a69;
 }
 
 body::-webkit-scrollbar {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Abouts, Content, Img, ImgAbout, Paragraph } from "./aboutStyle";
-import Imgabout from "./../../images/image-interactive.jpg";
 import { Pop } from "../feature/featureStyle";
 
 const About = () => {
@@ -12,7 +11,7 @@ const About = () => {
       </Pop>
       <Abouts>
       <ImgAbout>
-        <Img src={Imgabout} alt="sorry somthing go wrrang " />
+        <Img src={process.env.PUBLIC_URL+"/assets/images/image-interactive.jpg"} alt="sorry somthing go wrrang " />
       </ImgAbout>
       <Content>
         <h1>the learned in interactive VR </h1>

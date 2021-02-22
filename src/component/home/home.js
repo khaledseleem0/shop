@@ -1,5 +1,5 @@
-import React, { Component} from 'react'
-import Feature from '../feature/feature'
+import React, { Component} from 'react';
+import Feature from '../feature/feature';
 import Banner from './banner';
 import About from './about';
 import Ad from './ad';

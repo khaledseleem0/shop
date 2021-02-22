@@ -50,4 +50,3 @@ export const Paragraph = styled.p `
     line-height: 23px;
     padding: 5%;
   `
-

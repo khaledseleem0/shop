@@ -1,75 +1,55 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, {useEffect,useState} from "react";
 import { Img, Clear, Pop, Card, ImgContainer, ProductName, Price, CardContainer, Navigation } from './featureStyle';
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addtocart } from './../../store/actions';
 import data from "./../../data.json";
-class Feature extends Component {
-  state = {
-    card: [],
-    product: [],
-  }
+import { GraidContainer} from "./../products/productsStyle";
 
-  componentDidMount() {
-    const getHeightRate = () => {
-    let  productrate =  data[0].products.filter((product) => {
+function Feature(){
+  const [item, setItem] = useState([]);
+useEffect(()=>{
+      const getHeightRate = () => {
+       let  productrate =  data[0].products.filter((product) => {
         return product.rate === "5"
       })
       return Promise.resolve(productrate)
     };
     getHeightRate().then((respond) => {
-      this.setState({ card: respond})
-    })
-  }
+      setItem(respond)
+    });
+},[]);
+  
+return(
+  <div className="container-section">
+  <Pop>
+        <h3>features products </h3>
+           <span feature="true"></span>
+    </Pop>
+<GraidContainer>
 
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      pauseOnHover: true
-    };
-    const lg = window.innerWidth;
-    {lg >= 800 ? settings.slidesToShow = 3: 800 > lg && lg > 500 ?settings.slidesToShow = 2 :lg <= 500 ? settings.slidesToShow = 1 : settings.slidesToShow = 3  }
-    const cardState = this.state.card;
-    const cardRender = cardState.map((card, i) => {
-      return (
-        <CardContainer>
+{item.map((item,i)=>{
+
+      return  <CardContainer>
           <Card  key={i}>
             <ImgContainer>
-              <Img src={`${process.env.PUBLIC_URL}/assets/` + card.src} alt="" />
+              <Img src={`${process.env.PUBLIC_URL}/assets/` + item.src} alt="" />
               <Navigation>
-                <Link to={"product/" + card.id}>
+                <Link to={"product/" + item.id}>
                 <i class="fas fa-info-circle"></i>
                 </Link>
               </Navigation>
             </ImgContainer>
-            <ProductName>{card.name} </ProductName>
-            <Price>{card.price}$ </Price>
+            <ProductName>{item.name} </ProductName>
+            <Price>{item.price}$ </Price>
             <Clear></Clear>
           </Card>
         </CardContainer>
-      )
 
-    })
-
-    return (
-      <div className="container-section">
-        <Pop>
-          <h3>features products </h3>
-          <span feature="true"></span>
-        </Pop>
-        <Slider {...settings}>
-          {cardRender}
-        </Slider>
-      </div>
-    );
-  }
-
+})}
+</GraidContainer> 
+  </div>
+  )
 }
 function dispatchToProps(dispatch) {
   return {

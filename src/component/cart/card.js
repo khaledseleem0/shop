@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import {removefromcart,reset} from "./../../store/actions";
+import {removefromcart} from "./../../store/actions";
 import {CardContainer,ProductText,Btn} from './cardStyle';
 import {Img,ImgContainer} from './../feature/featureStyle';
 

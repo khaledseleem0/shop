@@ -5,7 +5,11 @@ export  const  Header = styled.div`
         display: flex;
         background: #fff;
         box-shadow:0 19px 38px rgba(0,0,0,0.023),0 15px 12px rgba(0,0,0,0.03322);
-        position:relative;
+        position: sticky;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        z-index:12;
 `
 export const Navbar =styled.div`
         flex:1;

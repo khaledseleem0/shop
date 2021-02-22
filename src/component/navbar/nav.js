@@ -1,6 +1,5 @@
 import React from 'react';
-import LogoIcon from './../../images/logo.png';
-import {NavLink ,BrowserRouter} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import {Logo,Navbar,Header,Ul,Li,Burger,IconNav,Amount} from "./navStyle";
 function Nav(props){
     let i = 0;
@@ -27,7 +26,7 @@ function Nav(props){
                 {/* logo  */}
                    <Logo>
                    <NavLink to="/shop" exact> 
-                   <img src={LogoIcon} alt="shop"/>
+                   <img src={process.env.PUBLIC_URL+`/assets/images/logo.png`} alt="shop"/>
                    </NavLink>
                    </Logo>
                    {/* navbar items */}

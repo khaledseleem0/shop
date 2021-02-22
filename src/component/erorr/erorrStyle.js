@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
-import Img from "./../../images/err.png"
 export const Container  = styled.div`
     padding:5%;
     display:flex;
@@ -10,7 +9,7 @@ export const Container  = styled.div`
 
 `
 export const Containerimg  = styled.div`
-    background:url(${Img});
+    background:url(${process.env.PUBLIC_URL+"/assets/images/err.png"});
     background-size:cover;
     height:100vh;
     display: flex;

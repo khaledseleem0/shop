@@ -1,14 +1,12 @@
 import styled from "styled-components";
-import Img from "./../../images/ad.jpg";
 export const Container = styled.div`
 clear: both;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(${Img}) ;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(${process.env.PUBLIC_URL+"/assets/images/sponsers/ad.jpg"});
 height:50vh;
 background-size:cover;
 background-attachment: fixed;
 position:relative;
 background-position: bottom center;
-
 `
 export const Content = styled.div`
     position:absolute;
